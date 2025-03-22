@@ -5,22 +5,63 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Arros de muntanya</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+    <header class="site-header">
+      <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="site-logo">
+    </header>
+    <main>
+      <div class="main-wrapper">
+        <section class="container">    
+          <h2 class="dish-title">Arros de muntanya</h2>
+          <article class="dish-main">
+            <figure class="dish-image">
+              <img src="./assets/images/arros-de-muntanya.jpg" alt="Arros de muntanya">
+            </figure>
+            <div class="dish-details">
+              <p><i class="fa-solid fa-clock"></i> <strong>Temps de cocció:</strong> 45 minuts</p>
+              <p class="dish-description">
+                Aquest arros de muntanya és un plat típic elaborat amb ingredients frescos i locals. Combina l'aroma dels xampinyons i el toc suau del pollastre amb l'arròs cuinat al punt, donant-li un sabor intens i autèntic.
+              </p>
+            </div>
+          </article>
+          <article class="dish-ingredients">
+            <h3>Ingredients</h3>
+            <ul class="ingredient-tags">
+              <li class="tag">Arròs</li>
+              <li class="tag">Xampinyons</li>
+              <li class="tag">Pollastre</li>
+              <li class="tag">Ceba</li>
+              <li class="tag">All</li>
+              <li class="tag">Julivert</li>
+            </ul>
+          </article>
+        </section>
+        <aside class="aside-container"> 
+          <article class="link-article">
+            <figure class="dish-image">
+              <img src="./assets/images/arros-de-muntanya-recepta.jpg" alt="Arros de muntanya">
+            </figure>
+            <a href="https://www.factorgastronomic.com/ingredient-principal/receptes-arros/recepta-arros-de-muntanya/" target="_blank">Visita la recepta</a>
+          </article>
+        
+          <article class="link-article">
+            <figure class="dish-image">
+              <img src="./assets/images/arros-de-muntanya-vidio.jpg" alt="Arros de muntanya vidio">
+            </figure>
+            <a href="https://www.youtube.com/watch?v=aRCNUYsNjfo&ab_channel=Cuinateca" target="_blank">Vidio de la recepta</a>
+          </article>
+ 
+          <article class="link-article">
+            <figure class="dish-image">
+              <img src="./assets/images/arros-de-muntanya-article.jpg" alt="Arros de muntanya article">
+            </figure>
+            <a href="https://cerdanya.org/gastronomia/receptes/arros-de-muntanya/" target="_blank">Llegeix més</a>
+          </article>
+        </aside>
+      </div>
+    </main>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
